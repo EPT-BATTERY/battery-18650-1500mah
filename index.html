@@ -5,11 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Battery Product Information - INR 18650 1500mAh</title>
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -35,20 +31,10 @@ body {
     text-align: center;
 }
 
-.header h1 {
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
+.header h1 { font-size: 22px; font-weight: 600; margin-bottom: 6px; }
+.header p { font-size: 14px; opacity: 0.85; }
 
-.header p {
-    font-size: 14px;
-    opacity: 0.85;
-}
-
-.section {
-    margin-bottom: 0;
-}
+.section { margin-bottom: 0; }
 
 .section-header {
     padding: 14px 30px;
@@ -58,63 +44,13 @@ body {
     letter-spacing: 0.5px;
 }
 
-.section-i .section-header {
-    background: linear-gradient(135deg, #1a5276, #2e86c1);
-}
+.section-i .section-header { background: linear-gradient(135deg, #1a5276, #2e86c1); }
+.section-ii .section-header { background: linear-gradient(135deg, #6a1b9a, #8e44ad); }
+.section-iii .section-header { background: linear-gradient(135deg, #1e8449, #27ae60); }
 
-.section-ii .section-header {
-    background: linear-gradient(135deg, #6a1b9a, #8e44ad);
-}
+.section-body { padding: 24px 30px; }
 
-.section-iii .section-header {
-    background: linear-gradient(135deg, #1e8449, #27ae60);
-}
-
-.section-body {
-    padding: 24px 30px;
-}
-
-.info-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 16px;
-}
-
-.info-table th {
-    background: #f8f9fa;
-    text-align: left;
-    padding: 10px 14px;
-    font-size: 13px;
-    color: #555;
-    font-weight: 600;
-    border: 1px solid #e0e0e0;
-    white-space: nowrap;
-    width: 220px;
-}
-
-.info-table td {
-    padding: 10px 14px;
-    font-size: 14px;
-    border: 1px solid #e0e0e0;
-    color: #333;
-}
-
-.info-table tr:nth-child(even) td {
-    background: #fafbfc;
-}
-
-.sub-block {
-    margin-bottom: 24px;
-}
-
-.sub-block-title {
-    font-size: 15px;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 10px;
-    padding-bottom: 6px;
-    border-bottom: 2px solid #ecf0f1;
-}
+.sub-block { margin-bottom: 24px; }
 
 .item-row {
     display: flex;
@@ -131,20 +67,10 @@ body {
     padding-right: 12px;
 }
 
-.item-value {
-    color: #333;
-    font-size: 14px;
-    flex: 1;
-}
+.item-value { color: #333; font-size: 14px; flex: 1; }
 
-.item-value a {
-    color: #2874a6;
-    text-decoration: none;
-}
-
-.item-value a:hover {
-    text-decoration: underline;
-}
+.item-value a { color: #2874a6; text-decoration: none; }
+.item-value a:hover { text-decoration: underline; }
 
 .number-cell {
     display: inline-flex;
@@ -161,15 +87,8 @@ body {
     flex-shrink: 0;
 }
 
-.section-ii .number-cell {
-    background: #f4ecf7;
-    color: #8e44ad;
-}
-
-.section-iii .number-cell {
-    background: #eafaf1;
-    color: #27ae60;
-}
+.section-ii .number-cell { background: #f4ecf7; color: #8e44ad; }
+.section-iii .number-cell { background: #eafaf1; color: #27ae60; }
 
 .item-block {
     display: flex;
@@ -178,9 +97,7 @@ body {
     border-bottom: 1px solid #f0f0f0;
 }
 
-.item-block-content {
-    flex: 1;
-}
+.item-block-content { flex: 1; }
 
 .item-block-title {
     font-weight: 700;
@@ -189,15 +106,9 @@ body {
     margin-bottom: 4px;
 }
 
-.item-block-desc {
-    color: #555;
-    font-size: 13px;
-}
+.item-block-desc { color: #555; font-size: 13px; }
 
-.image-display {
-    margin: 10px 0;
-    text-align: center;
-}
+.image-display { margin: 10px 0; text-align: center; }
 
 .image-display img {
     max-width: 100%;
@@ -205,22 +116,11 @@ body {
     box-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
 
-.image-display.ce-mark img {
-    max-height: 80px;
-}
+.image-display.ce-mark img { max-height: 80px; }
+.image-display.battery-photo img { max-height: 200px; }
+.image-display.recycle-symbol img { max-height: 120px; }
 
-.image-display.battery-photo img {
-    max-height: 200px;
-}
-
-.image-display.recycle-symbol img {
-    max-height: 120px;
-}
-
-.safety-list {
-    list-style: none;
-    counter-reset: safety-counter;
-}
+.safety-list { list-style: none; counter-reset: safety-counter; }
 
 .safety-list li {
     counter-increment: safety-counter;
@@ -272,7 +172,6 @@ body {
     .section-body { padding: 16px 20px; }
     .item-label { min-width: 120px; font-size: 12px; }
     .item-value { font-size: 13px; }
-    .info-table th { width: auto; }
 }
 </style>
 </head>
@@ -286,7 +185,7 @@ body {
 
     <!-- Section I -->
     <div class="section section-i">
-        <div class="section-header">I. General Information of Batteries湛昭测试</div>
+        <div class="section-header">I. General Information of Batteries</div>
         <div class="section-body">
             <div class="sub-block">
                 <div class="item-block">
@@ -373,7 +272,7 @@ body {
                     <div class="item-block-title">Conformity with Regulations</div>
                     <div class="item-block-desc">The above referenced product is in conformity with the applicable requirements of the following regulations: (EU) 2023/1542, declaration of conformity is issued under the sole responsibility of the manufacturer (Jiangsu EPT Battery Co., Ltd.)</div>
                     <div class="image-display ce-mark" style="margin-top:10px;">
-                        <img src="data:image/jpeg;base64,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" alt="CE Conformity Marking">
+                        <img src="data:image/jpeg;base64,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" alt="CE Mark">
                     </div>
                 </div>
             </div>
@@ -383,7 +282,7 @@ body {
                     <div class="item-block-title">Object of the Declaration</div>
                     <div class="item-block-desc">Description of the battery and identification allowing traceability:</div>
                     <div class="image-display battery-photo" style="margin-top:10px;">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGwAAABpCAYAAADfq8Z+AAAPgUlEQVR4nO2d228dx32Av9/M7p4776QkkiItS9GtviW2bOSGNJe2aYoaCAIUBQr0pS9tgDz0oWjf0v+gL23/hPYpSYv2oU2atA0QN4kvkR3fIsuUREo0KZKHt3N4Lrszvz7sOYe0IUe2JdPceD9ApLhnds/ufLP7m5ndnZGhv/iekpMZzEe9Aznvj1xYxsiFZYxcWMbIhWWMXFjGyIVljFxYxsiFZYxcWMbIhWWMXFjGyIVljFxYxsiFZYxcWMbIhWWMXFjGCD7qHTgURADBqANJF2mvrCrpIgXQ/aclpPep9tZFFUFA0jUOPlfRT4sK2v9EBNH++v3P7/1QPhbCbNzCLF0m6TahvYepTaUOq8MweQ5fv4GMzYMYVBURSSWKIAjGexyAgEn20OYuMjxFX1ygCYmxoDL4ToMnsQEF18GJQbH7Mu+BexfWOygAUYcXQ1rmPHIwGaCkpc6LYPB4TJpGAfGDlIrBaoITg/QyRWBQYvcPW+lf1QWPYnrbTc8KId2m3HwJf+oSSER05Qd0T38ag0MXX8JuXEFMEf+r/0LOfwXUkSxehk6LUuDoJIKcfBhTHAUfo6/9D+bil0mwyOLP6b74bzTXbzL8J39HHI30DwbZWECe/w67K7+i9Nt/DnOX7jmr4T4IM0C4dR1pbmJOnEOXXsZ12oTjM7THHiBYeQ2tTRJuXMPVxjGJQ5sbMDKL2VgifuBxVAzBxiLqPYlAsbNNUpkgqi+RPHAJbwsoEDbXgQSShHhkBusSgsVniU8+TrC9DPUbyNQZvAnx1QliE2Gb62hlGC8B1sfEnT3M1nXcyAPY6fPEL/479vGvQ1DEvfIf+NUraGOT6Ng5WjurBCPH6b75U6RQRCYexF74HZwtos/9M83nv4OIYKpTqIS9AiKYGz9l94d/D3ELWxqGoPK2y+298IGFGSAxFqsOae1Qtkqw+gqN7bcwYgj8BGCIXBvf2sS01oniXVx5FCdCuP4rdO6TxIuX8cfOU/JtWgjlbgtXGqJ2+xW6858hev37mEKZblBCXIL3YEiwjVXaM5+iUBtH4wbJ2DwF38bETUQ9O7UTGFVYu4EZO4Hi8SuvIee+CEuXkZE56Oxg5x7BiYXh4wTdC+jK68jT30bxvcwRzCv/ia4vYM5+AQ2LsPQC7Re+SzB0nPKXvwVTZwZntWmu0fjRP2KA0lf+EnvqKbwJ7pevezjDBKo3n6Mz8xgEEUlQpI2BaAtOf5Z44w2cKnFhCBOESFjBl4f2V69OkCy+CLOPQ6GKbxcQF4Mx0FihPXwSbr6AG50nKA/hVZG4jXgHNsSaAkHcQXbrWBuhSYwfOYVvbSAuQZp16DTxQxPo+gLUl0AEbTdgb5PwxrP43rbCpeeIZy+RTJ7GjM2iy68glQl0dx1TrKL1JUypihaHAYgvfw8vlspX/wo/enIgw4iSvPp96OxS/OK3kNOfxSHo/bLFBxAmksaTQuMWyZv/R6E2QXf8E8RicSKY0VN4AuTYwwhCZ+Is4NGRU+n6vQjUFLCaxjGA7bFP0I87XsBoGvOQ9LfBoyoYVbxYwONFiB98CtEISADBR/MInmB3DV16Dn3wKfDA9Hm8DSEoog//Id29DeSt15Hp8+jtq1jXwtsivjhOFO/hFn5M1wlh/QYyNIU8+acoYJM2jdvXiU6chdHZdB8PRNV4+VWcCdDll4lXrxJOX4Azn8OoDmK661VuDkUYpJmZ3LpCvLtBsvQy5vwUwe4aRiJ8c52ytbjqKGwtk0ycxYdlBE+oMX53HUKLlqcAQ7j0HH7sFBKE+JUryNAkQbyHViaw3R0o1PAqxJUJgk6TYO0KOjqDtHfwrgvVY3iXYEKLrN/CzVwk2L1NR0Jk9pNobRpTGEJvX4WZR4FeBSbpwug0GlWQmYfg1otw8nE0KuJPPIR6R7RXh09+HTau4zFps8DF4LpoeRztVZr6WS+A77YR9bSu/G/6uQiF2hjtq88CEB4/j57+DKT1zg9fmCokApz7MiW3R/vi18B3CbZuIKUxvLZAKtR2F2kFFQoLP8YWiygB3eIYUXuNjhisXKM19ySlzjZdH6PNLQrSwbTrJGopNm4hjTW6Qydg9Q3M9CO46gw2CimtvEK3UMEXKoQ7t3Bby3RPf5ogtFS2b9BpbGNcgp+/BCh6+01Yu0owfZFEorTQFapQv44fm0MkwGFTkVEFjRvYYo3uxjXCUg1VxfXMaFjERGV08zppq2u/LuxECCrD+E1L7elvo8UaEtWIKyMEUxcBQaVfo/1gfLCeDk0vbZ2Lf5DuqIlIilO4MMIkMUFjnUQD/NZbqDG4yiS+Ool0GzS9JZAiWh5BgW40SnFvE5GAJHGILSC+Q9LcojNxAVWhM3mOwMWYxird1UVapRrqHOzUcd0Gzb0GwVuv0r69yF5jh+7OBjp5Brl9FXEx1ncIHn06bUfhsK06uvATzMQcZu1NbHtzcKk2hTL+1i/xcZfwiT/CL17Gd5q92rqgJiCce4xkYxG/8EzaVpNeqFAI5i+h6kmuPYuMzOLL44gOmuGo6j3FNLn3lyF6O6wOI4pqrwQZi/ExnhCT7mqvDWUxmsYbZwIC38FJiMWlB0N69Koy6C0YlGH16WGbAOn/X0yvfZek8c2Evcq1xVx7BifgJRr0Upje92CL+LgD6jFrC8iT38CbELNyBbdyBfvo02nM8gnxf/8Dwef/DB9VAUW2brH33b/Be0f58W9gTz0Fw9PpJdAltL771ySbSxTPfwl56HcJhk/gbfm+NJxt4dIf/+29bkRE0l4CJM1AsSgGLwEqghNBJeh1B6VpfK9R7CUgVWzT9cQO0iiCGgNo2iCXdDmAFxl8T5p+f10wiIKWaviV17Fnv4CMTMPwDGb9OloaQqYfQkZnCarjqLUwNEPQXENuXkZqJ/Cjcwhgf/mvmPobuFYDM3UGMQEUR4gmT9K98RLJ9Z/TfvVHlB75GmoLYCzRyUeIl18lXvoFyWs/JJw6D8PT95rNwH0Sdnfk7kkOoO/4o3+OKTL4d6dt6oF1FSAsInt1THkUYw0qBtO4jSYxjM6kvStLlzGzvwXxHrrwPObCl+j+7J+I4h1k7Spu4WeYZh351Ndx136GmTyT9p8MT1M8+3lMsYaNKgSnnkRNmF5JikMUz30OW5vEhgVk5lGkMvp+M+2O3IdL4hFGBKsOv/wqJmkjgBuaxrQ205rf0Dimehw3PIO89gPkod9DJUA2b6Kjs2mR6OxCaxOGT6LdHeTqT5CLX8Ub0+u9kLTTV0DU9zrLBMTjxGLUp5UTlftwQfxNF3YHRCRt/916EXfyU4j3mO1lqE2gtvBrKwQiaU+G2iIUa/j72CB+r3wseusPoqTd0jr7GEbTaoCOTNO/hfLrV1Z8ZaLXvH97g/mw+NgJQzWNQTr40fN098zvJ9O3RcvDJb/jnDFyYRkjF5YxPn4xLGsIMLgzr7mwo44ZdDE7vEgu7KijAsHuMsU3vo9qLuzoo4ppbWIXfoyo5pWOrJELyxi5sIyRC8sYubCMkQs74qTP+JvB7dq8Wn/EUQy+OISbeyp9dmX4m//ysbqBmUXSu9npA0nB/lsjOUcV6f1QgWDs5vN4kfQ9tR7vPOXu9AjNnU7Ld6Z7L2k+7G39Ju27ug5BY+YJOiIf1Q3UnPeBNOsEoBjlvr2/lPNhogTae0hZ73iS5hwl0kdkczJFLixj5MIyRi4sY+TCMkYuLGPkwjJGLixj5MIyRi4sY+TCMkYuLGPkwjJGLixj5MIyRi4sY+TCMkYuLGPkwjJGLixj5MIyRv5s/bvQn2jgvaST/ug6h0Au7N0wvUHE7iJN1PTsHs5znbmwd6Gwu0q3UX/b9Bx3esBaSNDSGAwfP5T9yoW9C6F42scucLdn2IUEXb95ODtFXunIHId4hvWnvWEweYCkIzqnaH82od4A1u8lJkg/bf/vgwt6I8jcYTP9yXfuxMEx6OXAfmrvnZ/+hD2DIdD1cB9xPzxhRgh3Vym2ttirToGxmPYOWp2CxioUhvE4xIQgAb5+A7v7FrY6gW6tEBZD4u06Ov8EtrONbq+ic4/i2h2Cxm0i8bSG55BCBdPewpUm8CQUtpYwjXWS6YdwnRZJ7TioEqKY+gKxhhTLJaR+k9bsY7ieAEGIfAdt7hALBKK46iRogOAQhCDZw9vSob6VcGjCAt/FJHsEe2tUOzsUkm32tEB06+c0y1NUJKarAXFpFBFL7BNUDYEJcCjJ2IMElSmaI/NU33oWL0K4ehVpLOOqxwmCkPK1ZwgrFdq1acqrL9Oc+yzSbdB54EkKiy9gBWyxSiespGewJmiSUNpYopV4jCpOzKDGF27dxIcBIzsrxCaiJYZSYxn1HmMU3V7HDR2naWqHlY2HGcMcsrFEd+I0XRPSKY6TTJ6jMzJPVF+gWzlBUh5Fuh20UMWUxjAozoa4M5+jM3QSLQ0jKHFxEh8GxNVxOsUxXHmMOBrCjU2zN/YJ4tpxfFgmicoklRns9ReIR+fxXpCkS7WxTGwscX2Vkjha0QgqEWF7G9sfpVQUXxyiWF8kHpmnU5lAjSAmQo1FpUBQHcOUR/CH1goDmfjm9zTmEJoRIhgSlGBQkg0e8SBbSzA625vgrT95gO9N/KbpxHDiQAVJNZKOc+bSN+x7O+8kJNAY8YJ01olLxzDEg0HUfW+MezMYBHZ/OHXB7Y+Br57a3grN8gm0FwSNCt54VIN04h5RFEPgHX79On7i1IecgSB79UOMYap4LPSyG+2VSwFGTw7SKFDSLrLwDFKuwPgZ4kTxYYHSzk3a1WNoVCPq3EYlIDYFCAtUbvwUHxXxEqYTzbkE066jQYS4hG6h1hsxWw9MU7M/du/+LEX7JXd/bGBwKHgB3IHlnnTSm8OLYkeyHWbwRHGbIA7R+huEm8u0azNESRN34wV09jFCq+jWCiasoNMP0yofw4ycQBafo9yqI7t1XHmIQnkcdleJz/7+fZlK46PmSApLMPixeUIrGNchKUxgggLdwMJ4hKscI9E2Ml7CG0MniCh0NqHehIkHcb5LEA0RVyeRdh1KtbSqn31fR1NYVwJ06gLtfg5PvT3GpGkYtIEEpTX7BBbF9dOMpjO6JMMzOILBi8HvFavKaGvlrukMjl1j6b6/Q/zAHElh2osPB7N3f2hHPfBLDy7BvSMO9SsW8gEmV9uuTqcTvN0lPgkOLdtDO3uPpLCjgCLpjEp37ckw7yg2Hy65sHdD/XsXcYixMe/8zRi5sIyRC8sYubCMkQvLGLmwjJELyxi5sIyRC8sYubCMERSaK9jfgNsOHwe0tcX/A2QD5NB+ukChAAAAAElFTkSuQmCC" alt="Battery Product Image">
+                        <img src="data:image/png;base64,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" alt="Battery Label">
                     </div>
                 </div>
             </div>
